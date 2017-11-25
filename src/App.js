@@ -32,21 +32,21 @@ const App = ({activeKey}) =>
     <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (
       <li className={match ? 'active' : ''}>
         <NavLink to={to}>
-          <OverlayTrigger placement="bottom" overlay={tooltip}><i className={"fa fa-" + label + " fa-2x"} aria-hidden="false" aria="home"></i></OverlayTrigger>
+          <OverlayTrigger placement="top" overlay={tooltip}><i className={"fa fa-" + label + " fa-2x"} aria-hidden="false" aria="home"></i></OverlayTrigger>
         </NavLink>
       </li>
     )}/>
   );
   return (
     <HashRouter>
-      <Grid>
+      <Grid fluid={true}>
         <Row>
-          <Col xs={12} xsOffset={0}  className="text-right logo">
+          <Col xs={12} xsOffset={0} sm={10} smOffset={1} md={10} mdOffset={1} className="text-right logo">
             <Image src={logo} alt="Image" />
           </Col>
         </Row>
-        <Row>
-          <Col xs={10} xsOffset={1} md={12} mdOffset={0} className="rowContainer">
+        <Row className="rowContainer">
+          <Col xs={12} xsOffset={0} sm={10} smOffset={1} md={10} mdOffset={1} className="colContainer">
             <Switch>
               <Route exact path="/" component={Home}/>              
               <Route exact path="/about" component={About}/>
@@ -54,8 +54,8 @@ const App = ({activeKey}) =>
               <Route path="/work" component={Work} />
               <Route path="/contact" component={Contact} />              
             </Switch>
-            <Row className="pills">
-              <Col xs={12} xsOffset={0} md={12} mdOffset={0} >
+            {/* <Row> */}
+              <Col xs={12} xsOffset={0} md={12} mdOffset={0} className="pills">
                 <ul className="nav nav-pills">
                   <OldSchoolMenuLink activeOnlyWhenExact={true} to="/" label="home" tooltip={tooltipHome}/>
                   <OldSchoolMenuLink to="/about" label="user" tooltip={tooltipAbout}/>
@@ -91,7 +91,7 @@ const App = ({activeKey}) =>
                   </NavItem>
                 </Nav> */}
               </Col>
-            </Row>
+            {/* </Row>               */}
           </Col>
         </Row>
       </Grid>

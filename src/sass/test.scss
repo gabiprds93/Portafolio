@@ -30,7 +30,7 @@ $fontType: 'Merienda', cursive;
 // @mixin media-breakpoint-between()
 // @mixin media-breakpoint-between(xs, sm)
 // {
-//   .rowContainer
+//   .colContainer
 //   {
 //     overflow-y: auto;
 //     overflow-x: hidden;
@@ -38,7 +38,7 @@ $fontType: 'Merienda', cursive;
 // }
 *
 {
-  //outline: 1px solid black;
+  outline: 1px solid white;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -62,21 +62,31 @@ body
 }
 .rowContainer
 {
-  background-color: $colorWhite;
-  padding: $cero;
-  height: 70vh;
-  // overflow-y: auto;
-  // overflow-x: hidden;
-  // position: relative;
-}
-.pills
-{
-  position: absolute;
-  right: $cero;
-  bottom: $cero;
+  .colContainer
+  {
+    background-color: $colorWhite;
+    padding: $cero;
+    height: 70vh;
+    // overflow-y: auto;
+    // overflow-x: hidden;
+    // position: relative;
+  }
+  .pills
+  {
+    position: absolute;
+    right: $cero;
+    bottom: $cero;
+    &_element
+    {
+      padding-right: 0;
+      margin-right: 45px;
+    }
+  }
 }
 .nav-pills
-{
+{position: absolute;
+  right: $cero;
+  bottom: $cero;
   li
   {
     background-color: $colorGray;
@@ -127,34 +137,27 @@ body
 }
 .home
 {
-  height: 100%;  
   background-color: $colorGray;
   color: $colorRed;
-  &_image
-  {
-    height: 100%;
-    &-1
-    {
-      height: 100%;
-      background-image: url(../assets/imageHome1.JPG);
-      background-size: cover;
-      // background-repeat: no-repeat;
-      background-position-y: -80px;
-      background-position-x: -0px;      
-      // background-position: top;
-    }
-    &-2
-    {
-      height: 100%;
-      background-image: url(../assets/imageHome2.JPG);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-origin: initial;
-    }
-  }
+  height: 100%;
+  background-image: url(../assets/imageHome1.JPG);
+  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position-y: -50px;
+  background-position-x: -0px;      
+  // background-position: top;
+    // &-2
+    // {
+    //   height: 100%;
+    //   background-image: url(../assets/imageHome2.JPG);
+    //   background-size: cover;
+    //   background-repeat: no-repeat;
+    //   background-origin: initial;
+    // }
+  
   .content
   {
-    margin-top: 50px;
+    // margin-top: 50px;
   }
   .typing
   {
@@ -295,18 +298,18 @@ body
   }
 }
 
-@media (max-width: 768px) 
+@media (max-width: 728px) 
 {
   .pills
   {
-    position: absolute;
-    right: $cero;
-    bottom: $cero;
+    // position: fixed;
+    // right: $cero;
+    // bottom: $cero;
   }
-  .rowContainer
+  .colContainer
   {
     // position: relative;
-    overflow-y: auto;
+    // overflow-y: auto;
     // overflow-x: hidden;
   }
   .logo
@@ -316,6 +319,19 @@ body
       width: 100% !important;
       // height: 20px;
     }
+  }
+  .home
+  {
+    // background-position-y: -50px;
+    // background-position-x: -60px; 
+  }
+}
+@media (max-width: 600px) 
+{
+  .home
+  {
+    // background-position-y: -50px;
+    background-position-x: -100px; 
   }
 } 
 // @media (min-width: 768px) 
