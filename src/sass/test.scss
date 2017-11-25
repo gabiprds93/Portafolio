@@ -1,0 +1,296 @@
+$colorRed: rgb(190, 15, 15);
+$colorBlack: black;
+$colorDarkGray: #333333;
+$colorGray: #575757;
+$colorTransparent: transparent;
+$colorWhite: white;
+$cero: 0;
+// $fontType: 'Josefin Sans', sans-serif;
+// $fontType: 'Coustard', serif;
+$fontType: 'Merienda', cursive;
+// $fontType: 'Acme', sans-serif;
+// @keyframes escribir {
+//   from { width: 50% }
+//   to { width:0% }
+// }
+@mixin listActive($color, $cero)
+{
+  background-color: $color;
+  border-radius: $cero; 
+}
+@mixin lineVertical($color, $width, $height, $position, $right, $margin)
+{
+  background-color: $color;
+  width: $width;
+  height: $height;
+  position: $position;
+  right: $right;
+  margin: $margin $right; 
+}
+// @mixin media-breakpoint-between()
+// @mixin media-breakpoint-between(xs, sm)
+// {
+//   .rowContainer
+//   {
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//   }
+// }
+*
+{
+  //outline: 1px solid black;
+  margin: $cero;
+  padding: $cero;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: $fontType;
+  background-image: url(../assets/fondo24.png);
+  background-size: cover;
+  // background-repeat: no-repeat;
+  height: 100vh;  
+  .logo
+  {
+    // font-size: 1000px;
+    color: $colorRed;
+    img
+    {
+      width: 450px;
+    }
+  }
+}
+.rowContainer
+{
+  background-color: $colorWhite;
+  padding: $cero;
+  height: 70vh;
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  // position: relative;
+}
+.pills
+{
+  position: absolute;
+  right: $cero;
+  bottom: $cero;
+}
+.nav-pills
+{
+  li
+  {
+    background-color: $colorGray;
+    a
+    {
+      &:hover
+      {
+        @include listActive($colorBlack, $cero);
+      }
+      &:focus
+      {
+        @include listActive($colorBlack, $cero);
+      }
+      // a
+      // {
+      //   &:focus
+      //   {
+      //     @include listActive($colorTransparent, $cero);
+      //   }
+      // }    
+    }
+    i
+    {
+      color: $colorWhite;
+    }
+  }
+  li.active
+  {
+    a
+    {
+      @include listActive($colorRed, $cero);
+      color: $colorGray;
+      &:hover
+      {
+        color: $colorBlack;
+        @include listActive($colorRed, $cero);
+      }
+      &:focus
+      {
+        @include listActive($colorRed, $cero);
+      }
+    }
+    i
+    {
+      color: $colorWhite;
+    }
+  }
+}
+.home
+{
+  height: 100%;  
+  background-color: $colorGray;
+  color: $colorRed;
+  &_image
+  {
+    height: 100%;
+    &-1
+    {
+      height: 100%;
+      background-image: url(../assets/imageHome1.JPG);
+      background-size: cover;
+      // background-repeat: no-repeat;
+      background-position-y: -80px;
+      background-position-x: -0px;      
+      // background-position: top;
+    }
+    &-2
+    {
+      height: 100%;
+      background-image: url(../assets/imageHome2.JPG);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-origin: initial;
+    }
+  }
+  .content
+  {
+    margin-top: 50px;
+  }
+  .typing
+  {
+    color: $colorBlack;
+    margin-top: 80px;
+    // display: table;
+    // h3
+    // {
+    //   position: relative; 
+    //   float: left;
+    //   // background: tomato;
+    //   color: #fff;
+    //   font-size: 2.5em;
+    //   span
+    //   {
+    //     position:absolute;
+    //     right:0;
+    //     width:0;
+    //     background: tomato;
+    //     border-left: 1px solid #000;
+    //     animation: escribir 5s steps(30) infinite alternate;
+    //   }
+    // }
+  }
+}
+.about
+{
+  hr#aboutLineVerticalImg
+  {
+    @include lineVertical($colorRed, 5px, 50vh, absolute, 0, 10px);
+  }
+  hr#aboutLineVerticalSocial
+  {
+    @include lineVertical($colorRed, 5px, 20vh, absolute, 0, 10px);
+  }
+}
+.skills
+{
+  i
+  {
+    font-size: 70px;
+    color: $colorRed;
+    &:hover
+    {
+      color: $colorDarkGray;
+      cursor: pointer;      
+    }
+  }
+}
+.work
+{
+  .carouselContent
+  {
+    // color: rebeccapurple;
+    background-color: rgba($color: $colorRed, $alpha: 0.5);
+    // width: 200px;
+    // height: 100px;
+  }
+  img
+  {
+    height: 80vh;
+    // width: 50%;
+  }
+  h3
+  {
+    color: $colorDarkGray;
+  }
+  a
+  {
+    color: $colorRed;
+  }
+}
+.contact
+{
+  // overflow-y: auto;
+  // overflow-x: hidden;
+  hr.lineVertical-message
+  {
+    @include lineVertical($colorRed, 5px, 50vh, absolute, 0, 10px);
+  }
+  hr.lineVertical-contact
+  {
+    @include lineVertical($colorRed, 5px, 37vh, absolute, 0, 10px);
+  }
+  .textareaMessage
+  {
+    height: 20vh;
+  }
+  i
+  {
+    // color: $colorBlack;
+  }
+  .infoContact
+  {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 10px;     
+  }
+  a
+  {
+    color: $colorDarkGray;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 768px) 
+{
+  .pills
+  {
+    position: absolute;
+    right: $cero;
+    bottom: $cero;
+  }
+  .rowContainer
+  {
+    // position: relative;
+    overflow-y: auto;
+    // overflow-x: hidden;
+  }
+  .logo
+  {
+    img
+    {
+      width: 100% !important;
+      // height: 20px;
+    }
+  }
+} 
+// @media (min-width: 768px) 
+// {
+//   .logo
+//   {
+//     img
+//     {
+//       width: 450px;
+//       // height: 20px;
+//     }
+//   }
+// }

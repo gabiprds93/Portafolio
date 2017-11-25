@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merienda", cursive;
+  background-image: url(../assets/fondo24.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+body .logo {
+  color: #be0f0f;
+}
+
+body .logo img {
+  width: 450px;
+}
+
+.rowContainer {
+  background-color: white;
+  padding: 0;
+  height: 70vh;
+}
+
+.pills {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.nav-pills li {
+  background-color: #575757;
+}
+
+.nav-pills li a:hover {
+  background-color: black;
+  border-radius: 0;
+}
+
+.nav-pills li a:focus {
+  background-color: black;
+  border-radius: 0;
+}
+
+.nav-pills li i {
+  color: white;
+}
+
+.nav-pills li.active a {
+  background-color: #be0f0f;
+  border-radius: 0;
+  color: #575757;
+}
+
+.nav-pills li.active a:hover {
+  color: black;
+  background-color: #be0f0f;
+  border-radius: 0;
+}
+
+.nav-pills li.active a:focus {
+  background-color: #be0f0f;
+  border-radius: 0;
+}
+
+.nav-pills li.active i {
+  color: white;
+}
+
+.home {
+  height: 100%;
+  background-color: #575757;
+  color: #be0f0f;
+}
+
+.home_image {
+  height: 100%;
+}
+
+.home_image-1 {
+  height: 100%;
+  background-image: url(../assets/imageHome1.JPG);
+  background-size: cover;
+  background-position-y: -80px;
+  background-position-x: -0px;
+}
+
+.home_image-2 {
+  height: 100%;
+  background-image: url(../assets/imageHome2.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: initial;
+}
+
+.home .content {
+  margin-top: 50px;
+}
+
+.home .typing {
+  color: black;
+  margin-top: 80px;
+}
+
+.about hr#aboutLineVerticalImg {
+  background-color: #be0f0f;
+  width: 5px;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  margin: 10px 0;
+}
+
+.about hr#aboutLineVerticalSocial {
+  background-color: #be0f0f;
+  width: 5px;
+  height: 20vh;
+  position: absolute;
+  right: 0;
+  margin: 10px 0;
+}
+
+.skills i {
+  font-size: 70px;
+  color: #be0f0f;
+}
+
+.skills i:hover {
+  color: #333333;
+  cursor: pointer;
+}
+
+.work .carouselContent {
+  background-color: rgba(190, 15, 15, 0.5);
+}
+
+.work img {
+  height: 80vh;
+}
+
+.work h3 {
+  color: #333333;
+}
+
+.work a {
+  color: #be0f0f;
+}
+
+.contact hr.lineVertical-message {
+  background-color: #be0f0f;
+  width: 5px;
+  height: 50vh;
+  position: absolute;
+  right: 0;
+  margin: 10px 0;
+}
+
+.contact hr.lineVertical-contact {
+  background-color: #be0f0f;
+  width: 5px;
+  height: 37vh;
+  position: absolute;
+  right: 0;
+  margin: 10px 0;
+}
+
+.contact .textareaMessage {
+  height: 20vh;
+}
+
+.contact .infoContact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #333333;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .pills {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .rowContainer {
+    overflow-y: auto;
+  }
+  .logo img {
+    width: 100% !important;
+  }
+}
+ 
+
+ /*# sourceMappingURL= test.css.map */
