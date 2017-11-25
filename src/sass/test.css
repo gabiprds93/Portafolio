@@ -100,11 +100,6 @@ body .logo img {
   margin-top: 50px;
 }
 
-.home .typing {
-  color: black;
-  margin-top: 80px;
-}
-
 .about hr#aboutLineVerticalImg {
   background-color: #be0f0f;
   width: 5px;
@@ -133,19 +128,22 @@ body .logo img {
   cursor: pointer;
 }
 
-.work .carouselContent {
-  background-color: rgba(190, 15, 15, 0.5);
+.work .carouselContent h3 {
+  color: #be0f0f;
+  text-shadow: 0 1px 2px white;
 }
 
-.work img {
-  height: 80vh;
+.work .carouselContent a {
+  margin: 5px;
+  color: white;
+  background-color: black;
 }
 
-.work h3 {
-  color: #333333;
+.work .carousel-indicators .active {
+  background-color: #be0f0f;
 }
 
-.work a {
+.work a:hover {
   color: #be0f0f;
 }
 
@@ -193,6 +191,82 @@ body .logo img {
   }
   .logo img {
     width: 100% !important;
+  }
+}
+
+@keyframes parpadeo {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+}
+
+@keyframes escribiendo {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes parpadeo {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+}
+
+@-webkit-keyframes escribiendo {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@-moz-keyframes parpadeo {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #FFFFFF;
+  }
+}
+
+@-moz-keyframes escribiendo {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
  

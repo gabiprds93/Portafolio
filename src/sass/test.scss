@@ -158,8 +158,29 @@ body
   }
   .typing
   {
-    color: $colorBlack;
-    margin-top: 80px;
+    // h3{
+    //   color:#FFFFFF;
+    //   font-family:Consolas,monospace;
+    //   position:relative;
+    //   float:left;
+    //   font-size:150%;
+    //  }
+    // h3 span{
+    //   position:absolute;
+    //   top:0;
+    //   right:0;
+    //   width:0;
+    //   // background-color:#000000;
+    //   border-left: .1em solid #FFFFFF;
+    //   box-sizing: border-box;
+    //   -webkit-box-sizing: border-box;
+    //   -moz-box-sizing: border-box;
+    //   animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+    //   -webkit-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+    //   -moz-animation: escribiendo 5s steps(36, end), parpadeo 1s step-end infinite;
+    //  }
+    // // color: $colorBlack;
+    // margin-top: 80px;
     // display: table;
     // h3
     // {
@@ -208,23 +229,37 @@ body
 {
   .carouselContent
   {
-    // color: rebeccapurple;
-    background-color: rgba($color: $colorRed, $alpha: 0.5);
-    // width: 200px;
-    // height: 100px;
+    h3
+    {
+      color: $colorRed;
+      text-shadow: 0 1px 2px rgba($color: $colorWhite, $alpha: 1.0);
+      // background-color: rgba($color: $colorWhite, $alpha: 0.5)
+    }
+    a
+    {
+      margin: 5px;
+      color: $colorWhite;
+      background-color: rgba($color: $colorBlack, $alpha: 1.0)
+    }
+  }
+  .carousel-indicators
+  {
+    .active
+    {
+      background-color: $colorRed;    
+    }
   }
   img
   {
-    height: 80vh;
+    // height: 80vh;
     // width: 50%;
-  }
-  h3
-  {
-    color: $colorDarkGray;
   }
   a
   {
-    color: $colorRed;
+    &:hover
+    {
+      color: $colorRed;
+    }
   }
 }
 .contact
@@ -294,3 +329,44 @@ body
 //     }
 //   }
 // }
+
+ 
+ //ANIMACIONES 
+ @keyframes parpadeo{
+  from, to{border-color:transparent}
+  50%{border-color:#FFFFFF}
+ }
+ @keyframes escribiendo{
+  from{width:100%}
+  to{width:0}
+ }
+ @-webkit-keyframes parpadeo{
+  from, to{border-color:transparent}
+  50%{border-color:#FFFFFF}
+ }
+ @-webkit-keyframes escribiendo{
+  from{width:100%}
+  to{width:0}
+ }
+ @-moz-keyframes parpadeo {
+  from, to{border-color:transparent}
+  50%{border-color:#FFFFFF}
+ } 
+ @-moz-keyframes escribiendo {
+  from{width:100%}
+  to{width:0}
+ }
+ .typed-cursor{
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}

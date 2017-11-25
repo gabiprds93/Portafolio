@@ -12,7 +12,7 @@ const Home = () =>
                             <h1>Gabriela Paredes</h1>
                         </Col> */}
                         <Col xs={12} xsOffset={1} md={11} mdOffset={0} className="text-right typing">
-                            <h3>I am Front-End Developer Junior<span>&#160;</span></h3>
+                            <h3 id="typed"></h3>
                         </Col>
                     </Row>                    
                 </Col>
