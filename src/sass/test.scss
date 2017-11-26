@@ -38,7 +38,7 @@ $fontType: 'Merienda', cursive;
 // }
 *
 {
-  outline: 1px solid white;
+  // outline: 1px solid white;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -326,7 +326,7 @@ body
     // background-position-x: -60px; 
   }
 }
-@media (max-width: 600px) 
+@media (max-width: 580px) 
 {
   .home
   {

@@ -1,5 +1,4 @@
 * {
-  outline: 1px solid white;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -177,7 +176,7 @@ body .logo img {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
   .home {
     background-position-x: -100px;
   }
