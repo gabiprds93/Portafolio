@@ -38,7 +38,7 @@ $fontType: 'Merienda', cursive;
 // }
 *
 {
-  // outline: 1px solid white;
+  // outline: 1px solid black;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -208,11 +208,11 @@ body
 {
   hr#aboutLineVerticalImg
   {
-    @include lineVertical($colorRed, 5px, 50vh, absolute, 0, 10px);
+    @include lineVertical($colorRed, 5px, 55vh, absolute, 1px, 0);
   }
   hr#aboutLineVerticalSocial
   {
-    @include lineVertical($colorRed, 5px, 20vh, absolute, 0, 10px);
+    @include lineVertical($colorRed, 5px, 23vh, absolute, 0, 0);
   }
 }
 .skills

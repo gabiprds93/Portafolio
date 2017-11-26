@@ -93,7 +93,7 @@ const Contact = () =>
                     <Row>
                         <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
                             {/* <p> */}
-                                <a href="https://goo.gl/maps/sX4ZCp8u7HS2">
+                                {/* <a href="https://goo.gl/maps/sX4ZCp8u7HS2"> */}
                                     <Row className="infoContact">
                                         <Col xs={12} xsOffset={0} md={2} mdOffset={0} className="text-right">
                                             <i className="fa fa-map-marker fa-3x" aria-hidden="true"></i>
@@ -102,7 +102,7 @@ const Contact = () =>
                                             <span>Av. La Unión 307 Urb. San Martín - Socabaya - Arequipa</span> 
                                         </Col>      
                                     </Row>                                                                              
-                                </a>                               
+                                {/* </a>                                */}
                             {/* </p> */}
                         </Col>
                     </Row>

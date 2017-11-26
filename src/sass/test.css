@@ -93,19 +93,19 @@ body .logo img {
 .about hr#aboutLineVerticalImg {
   background-color: #be0f0f;
   width: 5px;
-  height: 50vh;
+  height: 55vh;
   position: absolute;
-  right: 0;
-  margin: 10px 0;
+  right: 1px;
+  margin: 0 1px;
 }
 
 .about hr#aboutLineVerticalSocial {
   background-color: #be0f0f;
   width: 5px;
-  height: 20vh;
+  height: 23vh;
   position: absolute;
   right: 0;
-  margin: 10px 0;
+  margin: 0 0;
 }
 
 .skills i {
