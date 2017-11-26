@@ -93,7 +93,7 @@ body .logo img {
 .about hr#aboutLineVerticalImg {
   background-color: #be0f0f;
   width: 5px;
-  height: 55vh;
+  height: 25vw;
   position: absolute;
   right: 1px;
   margin: 0 1px;
@@ -102,10 +102,19 @@ body .logo img {
 .about hr#aboutLineVerticalSocial {
   background-color: #be0f0f;
   width: 5px;
-  height: 23vh;
+  height: 150px;
   position: absolute;
   right: 0;
   margin: 0 0;
+}
+
+.about_me-image {
+  float: left;
+}
+
+.about_me-text {
+  margin-left: 15px;
+  margin-bottom: 0;
 }
 
 .skills i {
@@ -170,15 +179,51 @@ body .logo img {
   text-decoration: none;
 }
 
-@media (max-width: 728px) {
-  .logo img {
-    width: 100% !important;
+@media (max-width: 767px) {
+  .rowContainer {
+    overflow: auto;
+    height: 100vh !important;
+  }
+  .rowContainer .colContainer {
+    height: 110vh !important;
+  }
+  .nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1000000000000000;
   }
 }
 
 @media (max-width: 580px) {
   .home {
     background-position-x: -100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo img {
+    width: 350px !important;
+  }
+  .rowContainer {
+    height: 75vh;
+  }
+  .rowContainer .colContainer {
+    height: 80vh;
+  }
+  .about hr#aboutLineVerticalImg {
+    background-color: #be0f0f;
+    width: 5px;
+    height: 300px;
+    position: absolute;
+    right: 1px;
+    margin: 0 1px;
+  }
+}
+
+@media (max-width: 728px) {
+  .logo img {
+    width: 100% !important;
   }
 }
 

@@ -38,7 +38,7 @@ $fontType: 'Merienda', cursive;
 // }
 *
 {
-  // outline: 1px solid black;
+  // outline: 1px solid black; 
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -208,11 +208,25 @@ body
 {
   hr#aboutLineVerticalImg
   {
-    @include lineVertical($colorRed, 5px, 55vh, absolute, 1px, 0);
+    // height: 
+    @include lineVertical($colorRed, 5px, 25vw, absolute, 1px, 0);
   }
   hr#aboutLineVerticalSocial
   {
-    @include lineVertical($colorRed, 5px, 23vh, absolute, 0, 0);
+    @include lineVertical($colorRed, 5px, 150px, absolute, 0, 0);
+  }
+  &_me
+  {
+    // float: left;    
+    &-image
+    {
+      float: left;
+    }
+    &-text
+    {
+      margin-left: 15px;
+      margin-bottom: 0;
+    }
   }
 }
 .skills
@@ -297,7 +311,72 @@ body
     text-decoration: none;
   }
 }
+@media (max-width: 767px) 
+{
+  .rowContainer
+  {    
+    overflow: auto; 
+    height: 100vh !important;    
+    .colContainer
+    {
+      height: 110vh !important;
+      // overflow-y: auto;
+      // overflow-x: hidden;
+      // position: relative;
+      // position: relative;
+      // overflow: auto;
+    // overflow-x: hidden;
+    }
+  }
+  .nav
+  {
+    position: fixed;
+    right: $cero;
+    bottom: $cero;
+    z-index: 1000000000000000;
+  }
+}
 
+
+@media (max-width: 580px) 
+{
+  .home
+  {
+    // background-position-y: -50px;
+    background-position-x: -100px; 
+  }
+}
+@media (max-width: 991px) 
+{
+  .logo
+  {
+    img
+    {
+      width: 350px !important;
+      // height: 20px;
+    }
+  }
+  .rowContainer
+  {
+    height: 75vh;
+    
+    .colContainer
+    {
+      height: 80vh;
+      // overflow-y: auto;
+      // overflow-x: hidden;
+      // position: relative;
+    }
+  }
+  .about
+  {
+    hr#aboutLineVerticalImg
+    {
+      // height: 
+      @include lineVertical($colorRed, 5px, 300px, absolute, 1px, 0);
+    }
+  }
+}
 @media (max-width: 728px) 
 {
   .pills
@@ -324,14 +403,6 @@ body
   {
     // background-position-y: -50px;
     // background-position-x: -60px; 
-  }
-}
-@media (max-width: 580px) 
-{
-  .home
-  {
-    // background-position-y: -50px;
-    background-position-x: -100px; 
   }
 } 
 // @media (min-width: 768px) 
