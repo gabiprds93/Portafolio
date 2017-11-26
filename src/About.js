@@ -61,7 +61,7 @@ const About = () =>
             </Col>
           </Row>
           <Row>
-            <Col xs={12} smHidden={true} mdHidden={10}>
+            <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}>
               <h3 className=""></h3>
             </Col>
           </Row>            
@@ -69,7 +69,7 @@ const About = () =>
         <Col xs={1} xsOffset={0} sm={1} smOffset={0} md={1} mdOffset={0}>
           <hr id="aboutLineVerticalSocial"/>
         </Col>
-        <Col xs={11} xsOffset={1} smHidden={true} mdHidden={true} className="text-center">
+        <Col xs={11} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="text-center">
           
           <Row>
             <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
