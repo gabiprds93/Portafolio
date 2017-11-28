@@ -33,7 +33,7 @@ const About = () =>
               <Image width="100%" height="auto" src={xsImageProfile} alt="Image" thumbnail />
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
-              <p className="about_me-text">¡Hola! Mi nombre es Gabriela y estudio Front-End Developer en Laboratoria. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
+              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y estudio Front-End Developer en Laboratoria. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
                 Me encanta el mundo de la tecnologia, estar inmersa en este mundo me ha enseñado a que no hay que esperar a que alguien nos lo enseñe todo,
                 sino que una misma puede aprender por su cuenta las cosas que quiere profundizar. Es bueno salir de nuestra zona de confort por que eso nos ayuda a crecer.
               </p>
@@ -50,7 +50,7 @@ const About = () =>
                 Reconocimientos obtenidos en Laboratoria:
               </p>
             </Col>
-            <Col xs={3} sm={2} md={2} mdOffset={0}>
+            <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
               <Image width="100%" height="auto" src={bestSquad} alt="Image" />
             </Col>
             <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
@@ -64,72 +64,94 @@ const About = () =>
             <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}>
               <h3 className=""></h3>
             </Col>
+          </Row>  
+          <Row>
+            <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}>
+              <hr className="divider"/>
+            </Col>
           </Row>            
         </Col>
         <Col xs={1} xsOffset={0} sm={1} smOffset={0} md={1} mdOffset={0}>
           <hr id="aboutLineVerticalSocial"/>
         </Col>
         <Col xs={11} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="text-center">
-          
           <Row>
-            <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
+            <Col xs={3} xsOffset={1}>
               <p>
-                <i className="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/gabriela-paredes-paredes/" target="_blank">
+                  <i className="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           {/* </Row> */}
           {/* <Row> */}
-            <Col xs={3} xsOffset={0} sm={3} smOffset={0} md={3} mdOffset={0}>
+            <Col xs={3} xsOffset={1}>
               <p>
-                <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/gabriela.a.paredes.paredes" target="_blank">
+                  <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           {/* </Row> */}
           {/* <Row> */}
-            <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
+            <Col xs={3} xsOffset={1}>
               <p>
-                <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                <a href="https://github.com/gabiprds93" target="_blank">
+                  <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           {/* </Row> */}
           {/* <Row> */}
-            <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
+            {/* <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
               <p>
                 <i className="fa fa-skype fa-2x" aria-hidden="true"></i>
               </p>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
         <Col xsHidden={true} sm={1} smOffset={0} md={2} mdOffset={0}>
           <Row>
             <Col xs={2} xsOffset={0} md={3} mdOffset={0}>
               <p>
-                <i className="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                <a href="https://www.linkedin.com/in/gabriela-paredes-paredes/" target="_blank">
+                  <i className="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           </Row>
           <Row>
             <Col xs={4} xsOffset={0} sm={3} smOffset={0} md={3} mdOffset={0}>
               <p>
-                <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/gabriela.a.paredes.paredes" target="_blank">
+                  <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           </Row>
           <Row>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <p>
-                <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                <a href="https://github.com/gabiprds93" target="_blank">
+                  <i className="fa fa-github fa-2x" aria-hidden="true"></i>
+                </a>
               </p>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <p>
+
                 <i className="fa fa-skype fa-2x" aria-hidden="true"></i>
               </p>
             </Col>
-          </Row>
+          </Row> */}
         </Col>    
+      </Row>
+      <Row className="empty">
+        <Col xs={12} xsOffset={0} md={10} mdOffset={1}>
+          <h3 className=""></h3>
+        </Col>
       </Row>
     </Col>
   );

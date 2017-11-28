@@ -102,7 +102,7 @@ body .logo img {
 .about hr#aboutLineVerticalSocial {
   background-color: #be0f0f;
   width: 5px;
-  height: 150px;
+  height: 105px;
   position: absolute;
   right: 0;
   margin: 0 0;
@@ -114,11 +114,25 @@ body .logo img {
 
 .about_me-text {
   margin-left: 15px;
+  margin-right: 15px;
   margin-bottom: 0;
 }
 
+.about a {
+  color: #333333;
+}
+
+.about a:hover {
+  color: #be0f0f;
+}
+
+.about .divider {
+  background-color: #333333;
+  height: 1px;
+}
+
 .skills i {
-  font-size: 70px;
+  font-size: 450%;
   color: #be0f0f;
 }
 
@@ -185,6 +199,7 @@ body .logo img {
     height: 100vh !important;
   }
   .rowContainer .colContainer {
+    overflow: auto;
     height: 110vh !important;
   }
   .nav {
@@ -193,15 +208,41 @@ body .logo img {
     bottom: 0;
     z-index: 1000000000000000;
   }
+  .about hr#aboutLineVerticalImg {
+    background-color: #be0f0f;
+    width: 5px;
+    height: 70vh;
+    position: absolute;
+    right: 0px;
+    margin: 0 0px;
+  }
+  .about hr#aboutLineVerticalSocial {
+    background-color: #be0f0f;
+    width: 5px;
+    height: 35px;
+    position: absolute;
+    right: 0px;
+    margin: 0 0px;
+  }
+  .about .empty {
+    width: 100%;
+    height: 50px;
+  }
 }
 
 @media (max-width: 580px) {
   .home {
-    background-position-x: -100px;
+    background-position-x: -180px;
+  }
+  .work .carouselContent h3 {
+    font-size: 15px;
+  }
+  .work .carouselContent a {
+    font-size: 9px;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .logo img {
     width: 350px !important;
   }
@@ -211,6 +252,9 @@ body .logo img {
   .rowContainer .colContainer {
     height: 80vh;
   }
+  .home {
+    background-position-x: -0px;
+  }
   .about hr#aboutLineVerticalImg {
     background-color: #be0f0f;
     width: 5px;
@@ -218,6 +262,12 @@ body .logo img {
     position: absolute;
     right: 1px;
     margin: 0 1px;
+  }
+  .work .carouselContent h3 {
+    font-size: 18px;
+  }
+  .work .carouselContent a {
+    font-size: 13px;
   }
 }
 

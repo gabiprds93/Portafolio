@@ -38,7 +38,7 @@ $fontType: 'Merienda', cursive;
 // }
 *
 {
-  // outline: 1px solid black; 
+  // outline: 1px solid black;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -213,7 +213,7 @@ body
   }
   hr#aboutLineVerticalSocial
   {
-    @include lineVertical($colorRed, 5px, 150px, absolute, 0, 0);
+    @include lineVertical($colorRed, 5px, 105px, absolute, 0, 0);
   }
   &_me
   {
@@ -225,15 +225,29 @@ body
     &-text
     {
       margin-left: 15px;
+      margin-right: 15px;      
       margin-bottom: 0;
     }
+  }
+  a
+  {
+    color: $colorDarkGray;
+    &:hover
+    {
+      color: $colorRed;
+    }
+  }
+  .divider
+  {
+    background-color: $colorDarkGray;
+    height: 1px;
   }
 }
 .skills
 {
   i
   {
-    font-size: 70px;
+    font-size: 450%;
     color: $colorRed;
     &:hover
     {
@@ -244,6 +258,8 @@ body
 }
 .work
 {
+  // background-color: $colorWhite;
+  // height: 100vh;
   .carouselContent
   {
     h3
@@ -319,6 +335,8 @@ body
     height: 100vh !important;    
     .colContainer
     {
+    overflow: auto; 
+    
       height: 110vh !important;
       // overflow-y: auto;
       // overflow-x: hidden;
@@ -335,6 +353,24 @@ body
     bottom: $cero;
     z-index: 1000000000000000;
   }
+  .about
+  {
+    hr#aboutLineVerticalImg
+    {
+      // height: 
+      @include lineVertical($colorRed, 5px, 70vh, absolute, 0px, 0);
+    }
+    hr#aboutLineVerticalSocial
+    {
+      @include lineVertical($colorRed, 5px, 35px, absolute, 0px, 0);
+    }
+    .empty
+    {
+      // outline: 1px solid red;
+      width: 100%;
+      height: 50px;
+    }
+  }
 }
 
 
@@ -343,10 +379,24 @@ body
   .home
   {
     // background-position-y: -50px;
-    background-position-x: -100px; 
+    background-position-x: -180px; 
+  }
+  .work
+  {
+    .carouselContent
+    {
+      h3
+      {
+        font-size: 15px;
+      }
+      a
+      {
+        font-size: 9px;
+      }
+    } 
   }
 }
-@media (max-width: 991px) 
+@media (min-width: 768px) and (max-width: 991px) 
 {
   .logo
   {
@@ -368,6 +418,11 @@ body
       // position: relative;
     }
   }
+  .home
+  {
+    // background-position-y: -50px;
+    background-position-x: -0px; 
+  }
   .about
   {
     hr#aboutLineVerticalImg
@@ -375,6 +430,20 @@ body
       // height: 
       @include lineVertical($colorRed, 5px, 300px, absolute, 1px, 0);
     }
+  }
+  .work
+  {
+    .carouselContent
+    {
+      h3
+      {
+        font-size: 18px;
+      }
+      a
+      {
+        font-size: 13px;
+      }
+    } 
   }
 }
 @media (max-width: 728px) 
