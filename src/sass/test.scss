@@ -206,6 +206,10 @@ body
 }
 .about
 {
+  h3
+  {
+    color: $colorRed;
+  }
   hr#aboutLineVerticalImg
   {
     // height: 
@@ -245,6 +249,10 @@ body
 }
 .skills
 {
+  h3
+  {
+    color: $colorRed
+  }
   i
   {
     font-size: 450%;
@@ -260,6 +268,10 @@ body
 {
   // background-color: $colorWhite;
   // height: 100vh;
+  h3
+  {
+    color: $colorRed;
+  }
   .carouselContent
   {
     h3
@@ -299,13 +311,17 @@ body
 {
   // overflow-y: auto;
   // overflow-x: hidden;
+  h3
+  {
+    color: $colorRed
+  }
   hr.lineVertical-message
   {
     @include lineVertical($colorRed, 5px, 50vh, absolute, 0, 10px);
   }
   hr.lineVertical-contact
   {
-    @include lineVertical($colorRed, 5px, 37vh, absolute, 0, 10px);
+    @include lineVertical($colorRed, 5px, 250px, absolute, 0, 0px);
   }
   .textareaMessage
   {
@@ -324,7 +340,11 @@ body
   a
   {
     color: $colorDarkGray;
-    text-decoration: none;
+    &:hover
+    {
+      text-decoration: none;    
+      color: $colorRed;
+    }
   }
 }
 @media (max-width: 767px) 
@@ -369,6 +389,13 @@ body
       // outline: 1px solid red;
       width: 100%;
       height: 50px;
+    }
+  }
+  .contact
+  {
+    hr.lineVertical-contact
+    {
+      @include lineVertical($colorRed, 5px, 200px, absolute, 0, 0px);
     }
   }
 }
@@ -444,6 +471,13 @@ body
         font-size: 13px;
       }
     } 
+  }
+  .contact
+  {
+    hr.lineVertical-contact
+    {
+      @include lineVertical($colorRed, 5px, 230px, absolute, 0, 0px);
+    }
   }
 }
 @media (max-width: 728px) 

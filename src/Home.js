@@ -10,9 +10,9 @@ const Home = () =>
                     {/* <Col xs={12} xsOffset={1} md={11} mdOffset={0} className="text-right">
                         <h1>Gabriela Paredes</h1>
                     </Col> */}
-                    <Col xs={12} xsOffset={0} md={11} mdOffset={0} className="text-center typing">
+                    {/* <Col xs={12} xsOffset={0} md={11} mdOffset={0} className="text-center typing">
                         <h3 id="typed">I am Front-End Developer Junior</h3>
-                    </Col>
+                    </Col> */}
                 </Row>                    
             </Col>
             // {/* <Col xs={6} md={6} className="home_image-2">
