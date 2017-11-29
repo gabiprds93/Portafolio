@@ -42,11 +42,12 @@ $fontType: 'Merienda', cursive;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
+  font-family: $fontType;
 }
 body
 {
   font-family: $fontType;
-  background-image: url(../assets/fondo24.png);
+  background-image: url(../assets/fondo24-compressor.png);
   background-size: cover;
   // background-repeat: no-repeat;
   height: 100vh;  
@@ -140,7 +141,7 @@ body
   background-color: $colorGray;
   color: $colorRed;
   height: 100%;
-  background-image: url(../assets/imageHome1.JPG);
+  background-image: url(../assets/imageHome1-compressor.jpg);
   background-size: cover;
   // background-repeat: no-repeat;
   // background-position-y: -50px;
@@ -261,6 +262,82 @@ body
     {
       color: $colorDarkGray;
       cursor: pointer;      
+    }
+  }
+  &_icons
+  {
+    // position: absolute;
+    i
+    {
+      position: relative;
+      // -webkit-border-radius: 10px;
+      // -moz-border-radius: 10px;
+      // border-radius: 10px;
+      display:block;
+      // margin-left: auto;
+      // margin-right: auto;
+      // width: 100%;   
+      transform:scale(1);
+      -ms-transform:scale(1); // IE 9 
+      -moz-transform:scale(1); // Firefox 
+      -webkit-transform:scale(1); // Safari and Chrome 
+      -o-transform:scale(1); // Opera 
+      -webkit-transition: all 500ms ease-in-out; // IE 9
+      -moz-transition: all 500ms ease-in-out; // Firefox
+      -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+      -o-transition: all 500ms ease-in-out; // Opera       
+      transition: transfom opacity 1.5s;      
+      &:hover
+      {
+        transform:scale(0.8);
+        -ms-transform:scale(0.8); // IE 9 
+        -moz-transform:scale(0.8); // Firefox 
+        -webkit-transform:scale(0.8); // Safari and Chrome 
+        -o-transform:scale(0.8); // Opera
+        .text
+        {
+          transform:translate(0px,-20px);
+          opacity: 1;
+        }
+      }
+      .text
+      {
+        // font-family: 'Open Sans';
+        font-size: 20px;
+        padding-top: 20px;
+        display:block;
+        text-align: center;
+        // width: 100%;   
+        transform:translate(0px);
+        -webkit-transition: all 500ms ease-in-out;
+        -moz-transition: all 500ms ease-in-out;
+        -ms-transition: all 500ms ease-in-out;
+        -o-transition: all 500ms ease-in-out;
+        opacity: 0;
+        transition: transfom opacity 1.5s;
+        // &:hover
+        // {
+        //   transform:translate(0px,-20px);
+        //   opacity: 1;
+        // }
+      }
+    }      
+    
+    &:hover
+    {
+      // .i
+      // {
+      //   transform:scale(0.8);
+      //   -ms-transform:scale(0.8); // IE 9 
+      //   -moz-transform:scale(0.8); // Firefox 
+      //   -webkit-transform:scale(0.8); // Safari and Chrome 
+      //   -o-transform:scale(0.8); // Opera
+      // }
+      // .text
+      // {
+      //   transform:translate(0px,-20px);
+      //   opacity: 1;
+      // }
     }
   }
 }

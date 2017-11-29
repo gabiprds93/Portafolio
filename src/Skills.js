@@ -30,24 +30,30 @@ const Skills = () =>
               </Col>
             </Row>              
             <Row>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-html5-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i className="devicon-html5-plain">
+                  <div className="text">HTML 5</div>
+                </i>
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-css3-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i className="devicon-css3-plain">
+                  <div className="text">CSS 3</div>                
+                </i>   
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-javascript-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-javascript-plain">
+                  <div className="text">JavaScript</div>                  
+                </i>   
               </Col>
               {/* <Col xs={3} xsOffset={0} md={1} mdOffset={0}>
                 HTML 5    
               </Col> */}
             </Row>
-            <Row>
+            {/* <Row>
               <Col xs={12} xsOffset={0} md={10} mdOffset={1}>
                 <h1 className=""></h1>
               </Col>
-            </Row>
+            </Row> */}
             {/*<Row>
               <Col xs={6} xsOffset={1} md={6} mdOffset={1}>
                 <i class="devicon-css3-plain"></i>   
@@ -65,24 +71,30 @@ const Skills = () =>
               </Col>
             </Row> */}
             <Row>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-jquery-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-jquery-plain">
+                  <div className="text">jQuery</div>                
+                </i>   
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-bootstrap-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-bootstrap-plain">
+                  <div className="text">Bootstrap</div>                
+                </i>   
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-react-original"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-react-original">
+                  <div className="text">React</div>                
+                </i>   
               </Col>
               {/* <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
                 JavaScript    
               </Col> */}
             </Row>
-            <Row>
+            {/* <Row>
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
                 <h1 className=""></h1>
               </Col>
-            </Row>
+            </Row> */}
             {/* <Row>
               <Col xs={6} xsOffset={1} md={6} mdOffset={1}>
                 <i class="devicon-bootstrap-plain"></i>   
@@ -100,8 +112,10 @@ const Skills = () =>
               </Col>
             </Row> */}
             <Row>
-              <Col xs={4} xsOffset={4} sm={4} smOffset={4} md={4} mdOffset={4}>
-                <i class="devicon-sass-original"></i>   
+              <Col xs={4} xsOffset={4} sm={4} smOffset={4} md={4} mdOffset={4} className="skills_icons">
+                <i class="devicon-sass-original">
+                  <div className="text">SASS</div>                
+                </i>   
               </Col>
               {/* <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
                 React    
@@ -109,15 +123,15 @@ const Skills = () =>
             </Row>        
           </Col>
         </Row>
-        <Row>
+        {/* <Row>
           <Col xs={12} md={10}>
             <h1 className=""></h1>
           </Col>
-        </Row> 
+        </Row>  */}
       </Col>        
       <Col xs={12} xsOffset={0} sm={5} smOffset={0} md={5} mdOffset={0} className="text-center">
         <Row>
-          <Col xs={10} xsOffset={1} sm={11} smOffset={0} md={11} mdOffset={1}>
+          <Col xs={10} xsOffset={1} sm={11} smOffset={1} md={11} mdOffset={1}>
             <Row>
               <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
                 <h4>Herramientas</h4>
@@ -129,21 +143,27 @@ const Skills = () =>
               </Col>
             </Row>              
             <Row>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-git-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-git-plain">
+                  <div className="text">Git</div>                  
+                </i>   
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-visualstudio-plain"></i>  
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-visualstudio-plain">
+                  <div className="text">VS Code</div>                  
+                </i>  
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0}>
-                <i class="devicon-github-plain"></i>   
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-github-plain">
+                  <div className="text">GitHub</div>                
+                </i>   
               </Col>
             </Row>
-            <Row>
+            {/* <Row>
               <Col xs={12} xsOffset={0} md={10} mdOffset={1}>
                 <h1 className=""></h1>
               </Col>
-            </Row>
+            </Row> */}
             {/* <Row>
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
                 <h4 className="">Habilidades Blandas</h4>
