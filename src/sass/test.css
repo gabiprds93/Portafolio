@@ -172,6 +172,64 @@ body .logo img {
   color: #be0f0f;
 }
 
+.work_images {
+  float: left;
+  position: relative;
+}
+
+.work_images img {
+  float: left;
+  z-index: 4;
+}
+
+.work_images:hover .caption {
+  opacity: 1;
+  transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+}
+
+.work_images .caption {
+  position: absolute;
+  opacity: 0;
+  top: 100px;
+  height: 100%;
+  width: 83%;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.work_images .caption .blur {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  position: absolute;
+}
+
+.work_images .caption .caption-text {
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 15%;
+}
+
+.work_images .caption .caption-text a {
+  color: white;
+}
+
+.work_images .caption .caption-text a:hover {
+  color: #be0f0f;
+}
+
 .contact h3 {
   color: #be0f0f;
 }
@@ -248,6 +306,12 @@ body .logo img {
     width: 100%;
     height: 50px;
   }
+  .work_images {
+    color: #be0f0f;
+  }
+  .work_images .caption {
+    width: 90% !important;
+  }
   .contact hr.lineVertical-contact {
     background-color: #be0f0f;
     width: 5px;
@@ -267,6 +331,12 @@ body .logo img {
   }
   .work .carouselContent a {
     font-size: 9px;
+  }
+  .work_images {
+    color: #be0f0f;
+  }
+  .work_images .caption {
+    width: 85% !important;
   }
 }
 

@@ -33,9 +33,9 @@ const About = () =>
               <Image width="100%" height="auto" src={xsImageProfile} alt="Image" thumbnail />
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
-              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y estudio Front-End Developer en Laboratoria. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
-                Me encanta el mundo de la tecnologia, estar inmersa en este mundo me ha enseñado a que no hay que esperar a que alguien nos lo enseñe todo,
-                sino que una misma puede aprender por su cuenta las cosas que quiere profundizar. Es bueno salir de nuestra zona de confort por que eso nos ayuda a crecer.
+              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
+                Me encanta el mundo de la tecnología, estar inmersa en este mundo me ha enseñado a que no hay que esperar a que alguien nos lo enseñe todo,
+                sino que una misma puede aprender por su cuenta las cosas que quiere profundizar. Es bueno salir de nuestra zona de confort porque eso nos ayuda a crecer.
               </p>
             {/* </Col>   */}
           </Row>

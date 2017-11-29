@@ -121,14 +121,48 @@ const Work = () =>
         <Col xs={12} xsOffset={0} sm={5} smOffset={0} md={6} mdOffset={0}>
           <Col xsHidden={true} smHidden={true} md={12} mdOffset={0}>
             <Row>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%" src={laberinto} title="Laberinto" alt="Laberinto" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    {/* <h4 className="">Laberinto</h4> */}
+                    <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Laberinto/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%"src={ajedrez} title="Ajedrez" alt="Ajedrez" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Tablero-Ajedrez/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%" src={asientos} title="Reserva Asientos" alt="Reserva Asientos" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Reserva-Asientos/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
             </Row>
             <Row>
@@ -137,14 +171,47 @@ const Work = () =>
               </Col>
             </Row>
             <Row>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={koala} title="Koala" alt="Koala" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/save-the-koala-vol2" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={trivia} title="Trivia" alt="Trivia" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Trivia-Redux" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col sm={4} smOffset={0} md={4} mdOffset={0}>
+              <Col sm={4} smOffset={0} md={4} mdOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={panda} title="Panda" alt="Panda" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Pandas" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Col>
@@ -155,11 +222,33 @@ const Work = () =>
               </Col>
             </Row>
             <Row>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%" src={laberinto} title="Laberinto" alt="Laberinto" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Laberinto/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%"src={ajedrez} title="Ajedrez" alt="Ajedrez" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Tablero-Ajedrez/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
             </Row>
             <Row>
@@ -168,11 +257,33 @@ const Work = () =>
               </Col>
             </Row>
             <Row>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%" src={asientos} title="Reserva Asientos" alt="Reserva Asientos" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Reserva-Asientos/" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={koala} title="Koala" alt="Koala" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/save-the-koala-vol2" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
             </Row>
             <Row>
@@ -181,11 +292,33 @@ const Work = () =>
               </Col>
             </Row>
             <Row>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={trivia} title="Trivia" alt="Trivia" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Trivia-Redux" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
-              <Col xs={6} xsOffset={0} sm={6} smOffset={0}>
+              <Col xs={6} xsOffset={0} sm={6} smOffset={0} className="work_images">
                 <Image width="100%" height="auto" src={panda} title="Panda" alt="Panda" rounded />
+                <div className="caption">
+                  <div className="blur"></div>
+                  <div className="caption-text">
+                    <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
+                      Demo
+                    </a>
+                    <a href="https://github.com/gabiprds93/Pandas" target="_blank" className="btn">
+                      Repositorio
+                    </a>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Col>                      
