@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import {Grid, Row, Col, Carousel, Navbar, Nav, NavItem, Media, ProgressBar, Image, OverlayTrigger, Tooltip} from 'react-bootstrap';
-import imageProfile from './assets/imageProfile.jpg';
-import xsImageProfile from './assets/profile.jpg';
-import top5 from "./assets/images/5_mejores.png";
-import bestSquad from './assets/images/mejor_squad.png';
-import unicorn from './assets/images/unicornio.png';
+import imageProfile from './assets/images/imageProfile-compressor.jpg';
+import xsImageProfile from './assets/images/profile-compressor.jpg';
+import top5 from "./assets/images/5_mejores-compressor.png";
+import bestSquad from './assets/images/mejor_squad-compressor.png';
+import unicorn from './assets/images/unicornio-compressor.png';
 
 const About = () => 
 {
   return (
     <Col xs={12} sm={12} md={12} className="about">
       <Row>
-        <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
+        <Col xs={12} xsOffset={0} md={12} mdOffset={0} className="text-center">
           <h3 className="">Acerca de mí</h3>
         </Col>
       </Row>
@@ -33,8 +33,11 @@ const About = () =>
               <Image width="100%" height="auto" src={xsImageProfile} alt="Image" thumbnail />
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
-              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
-                Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y a aprender a salir de mi zona de confort ya que me ayudó a crecer.
+              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. 
+                También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
+                Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y
+                a estar en constante aprendizaje. 
+                 {/* y a aprender a salir de mi zona de confort como cuando tienes  ya que me ayudó a crecer. */}
               </p>
             {/* </Col>   */}
           </Row>
@@ -50,13 +53,13 @@ const About = () =>
               </p>
             </Col>
             <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
-              <Image width="100%" height="auto" src={bestSquad} alt="Image" />
+              <Image width="100%" height="auto" src={bestSquad} title="Mejor Squad" alt="Mejor Squad" />
             </Col>
             <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
-              <Image width="100%" height="auto" src={unicorn} alt="Image" />
+              <Image width="100%" height="auto" src={unicorn} title="Unicornio" alt="Unicornio" />
             </Col>
             <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
-              <Image width="100%" height="auto" src={top5} alt="Image" />
+              <Image width="100%" height="auto" src={top5} title="5 Mejores" alt="5 Mejores" />
             </Col>
           </Row>
           {/* <Row>

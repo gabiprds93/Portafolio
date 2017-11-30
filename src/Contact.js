@@ -7,7 +7,7 @@ const Contact = () =>
     return (
         <Col xs={12} sm={12} md={12} className="contact">
             <Row>
-                <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
+                <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0} className="text-center">
                     <h3 className="">Contáctame</h3>
                 </Col>
             </Row>
@@ -19,7 +19,7 @@ const Contact = () =>
             <Row>
                 <Col xs={10} xsOffset={1} sm={8} smOffset={2} md={6} mdOffset={3}>
                     <p className="text-justify">Hola de nuevo y gracias por llegar hasta aquí. 
-                        Si te gusto mi trabajo te dejo los datos para poder contactarnos. Hasta pronto.</p>
+                        Si te gustó mi trabajo te dejo los datos para poder contactarnos. Hasta pronto.</p>
                 </Col>
             </Row>
             <Row>

@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import {Grid, Row, Col, Carousel, Navbar, Nav, NavItem, Media, ProgressBar, Image, OverlayTrigger, Tooltip, Button} from 'react-bootstrap';
-import laberinto from './assets/laberinto.JPG';
-import laberinto1 from './assets/laberinto2.PNG';
-import ajedrez from './assets/ajedrez.JPG';
-import ajedrez2 from './assets/ajedrez2.PNG';
-import asientos from './assets/asientos.JPG';
-import asientos2 from './assets/asientos2.PNG';
-import koala from './assets/koala.JPG';
-import koala2 from './assets/koala2.PNG';
-import trivia from './assets/trivia.JPG';
-import trivia2 from './assets/trivia2.PNG';
-import panda from './assets/panda.JPG';
-import panda2 from './assets/panda2.PNG';
+import laberinto from './assets/images/laberinto-compressor.jpg';
+import laberinto1 from './assets/images/laberinto2-compressor.png';
+import ajedrez from './assets/images/ajedrez-compressor.jpg';
+import ajedrez2 from './assets/images/ajedrez2-compressor.png';
+import asientos from './assets/images/asientos-compressor.jpg';
+import asientos2 from './assets/images/asientos2-compressor.png';
+import koala from './assets/images/koala-compressor.jpg';
+import koala2 from './assets/images/koala2-compressor.png';
+import trivia from './assets/images/trivia-compressor.jpg';
+import trivia2 from './assets/images/trivia2-compressor.png';
+import panda from './assets/images/panda-compressor.jpg';
+import panda2 from './assets/images/panda2-compressor.png';
 
 const Work = () => 
 {
   return (
     <Col xs={12} sm={12} md={12} className="work">
       <Row>
-        <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
+        <Col xs={12} xsOffset={0} md={12} mdOffset={0} className="text-center">
           <h3 className="">Mis Trabajos</h3>
         </Col>
       </Row>

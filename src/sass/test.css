@@ -90,7 +90,7 @@ body .logo img {
   background-color: #575757;
   color: #be0f0f;
   height: 100%;
-  background-image: url(../assets/imageHome1-compressor.jpg);
+  background-image: url(../assets/images/imageHome1-compressor.jpg);
   background-size: cover;
   background-position-x: -0px;
 }
@@ -151,7 +151,7 @@ body .logo img {
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   height: 100%;
 }
@@ -436,6 +436,9 @@ body .logo img {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  body {
+    overflow: auto;
+  }
   .logo img {
     width: 350px !important;
   }
@@ -443,7 +446,7 @@ body .logo img {
     height: 80vh;
   }
   .home {
-    background-position-x: -50px;
+    background-position-x: -0px;
   }
   .about hr#aboutLineVerticalImg {
     background-color: #be0f0f;

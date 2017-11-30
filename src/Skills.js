@@ -6,7 +6,7 @@ const Skills = () =>
   return (
     <Col xs={12} sm={12} md={12} className="skills">
     <Row>
-      <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
+      <Col xs={12} xsOffset={0} md={12} mdOffset={0} className="text-center">
         <h3 className="">Mis Habilidades</h3>
       </Col>
     </Row>
