@@ -36,7 +36,7 @@ const Work = () =>
                 <img title="Laberinto" alt="Laberinto" responsive src={laberinto1}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3 className="">Laberinto</h3>
+                {/* <h3 className="">Laberinto</h3> */}
                 <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -50,7 +50,7 @@ const Work = () =>
                 <img title="Ajedrez" alt="Ajedrez" src={ajedrez2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Tablero de Ajedrez</h3>
+                {/* <h3>Tablero de Ajedrez</h3> */}
                 <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -64,7 +64,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={asientos2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Reserva de Asientos</h3>
+                {/* <h3>Reserva de Asientos</h3> */}
                 <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -78,7 +78,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={koala2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Save the Koala</h3>
+                {/* <h3>Save the Koala</h3> */}
                 <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -92,7 +92,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={trivia2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Trivia Disney</h3>
+                {/* <h3>Trivia Disney</h3> */}
                 <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -106,7 +106,7 @@ const Work = () =>
                 <img title="Pandas" alt="Pandas" src={panda2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Love Love Panda</h3>
+                {/* <h3>Love Love Panda</h3> */}
                 <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -336,7 +336,7 @@ const Work = () =>
                 <img title="Laberinto" alt="Laberinto" responsive src={laberinto1}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3 className="">Laberinto</h3>
+                {/* <h3 className="">Laberinto</h3> */}
                 <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -350,7 +350,7 @@ const Work = () =>
                 <img title="Ajedrez" alt="Ajedrez" src={ajedrez2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Tablero de Ajedrez</h3>
+                {/* <h3>Tablero de Ajedrez</h3> */}
                 <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -364,7 +364,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={asientos2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Reserva de Asientos</h3>
+                {/* <h3>Reserva de Asientos</h3> */}
                 <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -378,7 +378,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={koala2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Save the Koala</h3>
+                {/* <h3>Save the Koala</h3> */}
                 <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -392,7 +392,7 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={trivia2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Trivia Disney</h3>
+                {/* <h3>Trivia Disney</h3> */}
                 <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -406,7 +406,7 @@ const Work = () =>
                 <img title="Pandas" alt="Pandas" src={panda2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                <h3>Love Love Panda</h3>
+                {/* <h3>Love Love Panda</h3> */}
                 <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
                   Demo
                 </a>
