@@ -76,9 +76,9 @@ const Skills = () =>
                   <div className="text">jQuery</div>                
                 </i>   
               </Col>
-              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons text-left">
-                <i className="devicon-bootstrap-plain text-left">
-                  <div className="text text-left">Bootstrap</div>                
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i className="devicon-bootstrap-plain">
+                  <div className="text">Bootstrap</div>                
                 </i>   
               </Col>
               <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">

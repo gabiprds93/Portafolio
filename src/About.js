@@ -34,7 +34,7 @@ const About = () =>
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
               <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
-                Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y que es bueno salir de nuestra zona de confort porque eso nos ayuda a crecer.
+                Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y a aprender a salir de mi zona de confort ya que me ayudó a crecer.
               </p>
             {/* </Col>   */}
           </Row>

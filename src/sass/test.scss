@@ -610,7 +610,6 @@ body
   {
     hr#aboutLineVerticalImg
     {
-      // height: 
       @include lineVertical($colorRed, 5px, 300px, absolute, 1px, 0);
     }
   }
