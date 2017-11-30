@@ -33,10 +33,12 @@ const About = () =>
               <Image width="100%" height="auto" src={xsImageProfile} alt="Image" thumbnail />
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
-              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. 
-                También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
+              <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela, soy Egresada de Laboratoria Arequipa 
+                y Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
                 Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y
-                a estar en constante aprendizaje. 
+                a estar en constante aprendizaje. Siempre esforzandome por alcanzar las metas y objetivos, para mí 
+                es importante trabajar por satisfacción personal y hacer lo que me gusta. <br/><br/>
+                "La mejor manera de predecir el futuro es crearlo." - Abraham Lincoln
                  {/* y a aprender a salir de mi zona de confort como cuando tienes  ya que me ayudó a crecer. */}
               </p>
             {/* </Col>   */}
