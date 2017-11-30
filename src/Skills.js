@@ -6,7 +6,7 @@ const Skills = () =>
   return (
     <Col xs={12} sm={12} md={12} className="skills">
     <Row>
-      <Col xs={10} xsOffset={1} md={10} mdOffset={1}>
+      <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
         <h3 className="">Mis Habilidades</h3>
       </Col>
     </Row>
@@ -16,9 +16,9 @@ const Skills = () =>
       </Col>
     </Row>
     <Row>
-      <Col xs={10} xsOffset={1} sm={5} smOffset={1} md={5} mdOffset={1} className="text-center">
+      <Col xs={10} xsOffset={1} sm={6} smOffset={0} md={6} mdOffset={0} className="text-center">
         <Row>
-          <Col xs={12} xsOffset={0} sm={11} smOffset={1} md={11} mdOffset={1}>
+          <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
             <Row>
               <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
                 <h4>Habilidades Técnicas</h4>
@@ -129,7 +129,7 @@ const Skills = () =>
           </Col>
         </Row>  */}
       </Col>        
-      <Col xs={12} xsOffset={0} sm={5} smOffset={0} md={5} mdOffset={0} className="text-center">
+      <Col xs={12} xsOffset={0} sm={6} smOffset={0} md={6} mdOffset={0} className="text-center">
         <Row>
           <Col xs={10} xsOffset={1} sm={11} smOffset={1} md={11} mdOffset={1}>
             <Row>

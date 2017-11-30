@@ -27,18 +27,10 @@ $fontType: 'Merienda', cursive;
   right: $right;
   margin: $margin $right; 
 }
-// @mixin media-breakpoint-between()
-// @mixin media-breakpoint-between(xs, sm)
-// {
-//   .colContainer
-//   {
-//     overflow-y: auto;
-//     overflow-x: hidden;
-//   }
-// }
+
 *
 {
-  // outline: 1px solid black;
+  // outline: 1px solid red;
   margin: $cero;
   padding: $cero;
   box-sizing: border-box;
@@ -47,13 +39,14 @@ $fontType: 'Merienda', cursive;
 body
 {
   font-family: $fontType;
-  background-image: url(../assets/fondo24-compressor.png);
+  background-color: $colorBlack;
+  // background-image: url(../assets/fondo24-compressor.png);
   background-size: cover;
   // background-repeat: no-repeat;
-  height: 100vh;  
+  // height: 100vh;  
+  overflow: hidden;
   .logo
   {
-    // font-size: 1000px;
     color: $colorRed;
     img
     {
@@ -63,11 +56,13 @@ body
 }
 .rowContainer
 {
+  height: 70vh;  
   .colContainer
   {
     background-color: $colorWhite;
     padding: $cero;
-    height: 70vh;
+    // height: 70vh;
+    height: 100%; 
     // overflow-y: auto;
     // overflow-x: hidden;
     // position: relative;
@@ -85,7 +80,8 @@ body
   }
 }
 .nav-pills
-{position: absolute;
+{
+  position: absolute;
   right: $cero;
   bottom: $cero;
   li
@@ -100,14 +96,7 @@ body
       &:focus
       {
         @include listActive($colorBlack, $cero);
-      }
-      // a
-      // {
-      //   &:focus
-      //   {
-      //     @include listActive($colorTransparent, $cero);
-      //   }
-      // }    
+      }    
     }
     i
     {
@@ -146,16 +135,7 @@ body
   // background-repeat: no-repeat;
   // background-position-y: -50px;
   background-position-x: -0px;      
-  // background-position: top;
-    // &-2
-    // {
-    //   height: 100%;
-    //   background-image: url(../assets/imageHome2.JPG);
-    //   background-size: cover;
-    //   background-repeat: no-repeat;
-    //   background-origin: initial;
-    // }
-  
+  // background-position: top;  
   .content
   {
     // margin-top: 50px;
@@ -207,13 +187,17 @@ body
 }
 .about
 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   h3
   {
     color: $colorRed;
   }
   hr#aboutLineVerticalImg
   {
-    // height: 
     @include lineVertical($colorRed, 5px, 25vw, absolute, 1px, 0);
   }
   hr#aboutLineVerticalSocial
@@ -222,7 +206,6 @@ body
   }
   &_me
   {
-    // float: left;    
     &-image
     {
       float: left;
@@ -250,6 +233,11 @@ body
 }
 .skills
 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   h3
   {
     color: $colorRed
@@ -302,7 +290,6 @@ body
       }
       .text
       {
-        // font-family: 'Open Sans';
         font-size: 20px;
         padding-top: 20px;
         display:block;
@@ -321,33 +308,30 @@ body
         //   opacity: 1;
         // }
       }
-    }      
-    
-    &:hover
-    {
-      // .i
-      // {
-      //   transform:scale(0.8);
-      //   -ms-transform:scale(0.8); // IE 9 
-      //   -moz-transform:scale(0.8); // Firefox 
-      //   -webkit-transform:scale(0.8); // Safari and Chrome 
-      //   -o-transform:scale(0.8); // Opera
-      // }
-      // .text
-      // {
-      //   transform:translate(0px,-20px);
-      //   opacity: 1;
-      // }
     }
   }
 }
 .work
 {
   // background-color: $colorWhite;
-  // height: 100vh;
+  // height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   h3
   {
     color: $colorRed;
+  }
+  .containerWork
+  {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // justify-content: center;     
+    // height: 100%;
+  
   }
   .carouselContent
   {
@@ -402,7 +386,6 @@ body
     }
     .caption
     {
-      // cursor: pointer;
       position: absolute;
       opacity: 0;
       top: 100px;
@@ -446,6 +429,11 @@ body
 {
   // overflow-y: auto;
   // overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   h3
   {
     color: $colorRed
@@ -456,15 +444,11 @@ body
   }
   hr.lineVertical-contact
   {
-    @include lineVertical($colorRed, 5px, 250px, absolute, 0, 0px);
+    @include lineVertical($colorRed, 5px, 190px, absolute, 0, 0px);
   }
   .textareaMessage
   {
     height: 20vh;
-  }
-  i
-  {
-    // color: $colorBlack;
   }
   .infoContact
   {
@@ -484,15 +468,22 @@ body
 }
 @media (max-width: 767px) 
 {
+  body
+  {
+    // overflow: auto;
+    // height: 100vh !important;    
+  }
   .rowContainer
   {    
-    overflow: auto; 
-    height: 100vh !important;    
+    // overflow: auto;
+    height: 70vh;    
     .colContainer
     {
-    overflow: auto; 
+      overflow: auto;
+      overflow-x: hidden;
+    // height: 100%;
     
-      height: 110vh !important;
+      // height: 100vh !important;
       // overflow-y: auto;
       // overflow-x: hidden;
       // position: relative;
@@ -510,10 +501,13 @@ body
   }
   .about
   {
+    display: block;
+    // height: 100%;
+    // overflow: auto;
     hr#aboutLineVerticalImg
     {
       // height: 
-      @include lineVertical($colorRed, 5px, 70vh, absolute, 0px, 0);
+      @include lineVertical($colorRed, 5px, 330px, absolute, 0px, 0);
     }
     hr#aboutLineVerticalSocial
     {
@@ -523,11 +517,16 @@ body
     {
       // outline: 1px solid red;
       width: 100%;
-      height: 50px;
+      // height: 50px;
     }
+  }
+  .skills
+  {
+    display: block;
   }
   .work
   {
+    display: block;
     &_images
     {
       color: $colorRed;
@@ -539,20 +538,20 @@ body
   }
   .contact
   {
+    display: block;
     hr.lineVertical-contact
     {
-      @include lineVertical($colorRed, 5px, 200px, absolute, 0, 0px);
+      @include lineVertical($colorRed, 5px, 165px, absolute, 0, 0px);
     }
   }
 }
-
 
 @media (max-width: 580px) 
 {
   .home
   {
     // background-position-y: -50px;
-    background-position-x: -180px; 
+    background-position-x: -150px; 
   }
   .work
   {
@@ -580,6 +579,7 @@ body
     }
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) 
 {
   .logo
@@ -592,11 +592,10 @@ body
   }
   .rowContainer
   {
-    height: 75vh;
-    
+    height: 80vh;    
     .colContainer
     {
-      height: 80vh;
+      // height: 80vh;
       // overflow-y: auto;
       // overflow-x: hidden;
       // position: relative;
@@ -605,7 +604,7 @@ body
   .home
   {
     // background-position-y: -50px;
-    background-position-x: -0px; 
+    background-position-x: -50px; 
   }
   .about
   {
@@ -633,10 +632,11 @@ body
   {
     hr.lineVertical-contact
     {
-      @include lineVertical($colorRed, 5px, 230px, absolute, 0, 0px);
+      @include lineVertical($colorRed, 5px, 190px, absolute, 0, 0px);
     }
   }
 }
+
 @media (max-width: 728px) 
 {
   .pills
@@ -663,6 +663,13 @@ body
   {
     // background-position-y: -50px;
     // background-position-x: -60px; 
+  }
+  .work
+  {
+    .containerWork
+    {
+      display: block !important;
+    }
   }
 } 
 // @media (min-width: 768px) 

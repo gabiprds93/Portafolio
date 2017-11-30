@@ -14,19 +14,19 @@ import logo from './assets/images/logo1.png';
 const App = ({activeKey}) => 
 {
   const tooltipHome = (
-    <Tooltip id="tooltip"><strong>Home</strong></Tooltip>
+    <Tooltip id="tooltip"><strong>Portada</strong></Tooltip>
   );
   const tooltipAbout = (
-    <Tooltip id="tooltip"><strong>About</strong></Tooltip>
+    <Tooltip id="tooltip"><strong>Acerca de mí</strong></Tooltip>
   );
   const tooltipSkills = (
-    <Tooltip id="tooltip"><strong>Skills</strong></Tooltip>
+    <Tooltip id="tooltip"><strong>Habilidades</strong></Tooltip>
   );
   const tooltipWork = (
-    <Tooltip id="tooltip"><strong>Work</strong></Tooltip>
+    <Tooltip id="tooltip"><strong>Trabajos</strong></Tooltip>
   );
   const tooltipContact = (
-    <Tooltip id="tooltip"><strong>Contact me</strong></Tooltip>
+    <Tooltip id="tooltip"><strong>Contacto</strong></Tooltip>
   );
   const OldSchoolMenuLink = ({ label, tooltip, to, activeOnlyWhenExact }) => (
     <Route path={to} exact={activeOnlyWhenExact} children={({ match }) => (

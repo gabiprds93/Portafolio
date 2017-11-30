@@ -11,7 +11,7 @@ const About = () =>
   return (
     <Col xs={12} sm={12} md={12} className="about">
       <Row>
-        <Col xs={11} xsOffset={1} md={10} mdOffset={1}>
+        <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
           <h3 className="">Acerca de mí</h3>
         </Col>
       </Row>
@@ -29,13 +29,12 @@ const About = () =>
             <Col xsHidden={true} smHidden={true} md={4} mdOffset={0} className="about_me-image">
               <Image width="100%" src={imageProfile} title="ImageProfile" alt="Image" thumbnail />
             </Col>
-            <Col xs={5} sm={5} mdHidden={true} lgHidden={true} className="about_image">
+            <Col xs={6} sm={5} mdHidden={true} lgHidden={true} className="about_image">
               <Image width="100%" height="auto" src={xsImageProfile} alt="Image" thumbnail />
             </Col>        
             {/* <Col xs={8} xsOffset={1} sm={8} smOffset={0} md={8} mdOffset={0} className="text-justify">   */}
               <p className="about_me-text text-justify">¡Hola! Mi nombre es Gabriela y soy egresada de Laboratoria Arequipa. También soy Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
-                Me encanta el mundo de la tecnología, estar inmersa en este mundo me ha enseñado a que no hay que esperar a que alguien nos lo enseñe todo,
-                sino que una misma puede aprender por su cuenta las cosas que quiere profundizar. Es bueno salir de nuestra zona de confort porque eso nos ayuda a crecer.
+                Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y que es bueno salir de nuestra zona de confort porque eso nos ayuda a crecer.
               </p>
             {/* </Col>   */}
           </Row>
@@ -60,18 +59,18 @@ const About = () =>
               <Image width="100%" height="auto" src={top5} alt="Image" />
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}>
               <h3 className=""></h3>
             </Col>
-          </Row>  
+          </Row>   */}
           <Row>
             <Col xs={12} smHidden={true} mdHidden={true} lgHidden={true}>
               <hr className="divider"/>
             </Col>
           </Row>            
         </Col>
-        <Col xs={1} xsOffset={0} sm={1} smOffset={0} md={1} mdOffset={0}>
+        <Col xsHidden={true} sm={1} smOffset={0} md={1} mdOffset={0}>
           <hr id="aboutLineVerticalSocial"/>
         </Col>
         <Col xs={11} xsOffset={1} smHidden={true} mdHidden={true} lgHidden={true} className="text-center">
@@ -149,7 +148,7 @@ const About = () =>
         </Col>    
       </Row>
       <Row className="empty">
-        <Col xs={12} xsOffset={0} md={10} mdOffset={1}>
+        <Col xsHidden={true} xsOffset={0} md={10} mdOffset={1}>
           <h3 className=""></h3>
         </Col>
       </Row>

@@ -7,9 +7,9 @@
 
 body {
   font-family: "Merienda", cursive;
-  background-image: url(../assets/fondo24-compressor.png);
+  background-color: black;
   background-size: cover;
-  height: 100vh;
+  overflow: hidden;
 }
 
 body .logo {
@@ -20,10 +20,14 @@ body .logo img {
   width: 450px;
 }
 
+.rowContainer {
+  height: 70vh;
+}
+
 .rowContainer .colContainer {
   background-color: white;
   padding: 0;
-  height: 70vh;
+  height: 100%;
 }
 
 .rowContainer .pills {
@@ -91,6 +95,14 @@ body .logo img {
   background-position-x: -0px;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .about h3 {
   color: #be0f0f;
 }
@@ -134,6 +146,14 @@ body .logo img {
 .about .divider {
   background-color: #333333;
   height: 1px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .skills h3 {
@@ -192,8 +212,21 @@ body .logo img {
   transition: transfom opacity 1.5s;
 }
 
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .work h3 {
   color: #be0f0f;
+}
+
+.work .containerWork {
+  display: flex;
+  align-items: center;
 }
 
 .work .carouselContent h3 {
@@ -273,6 +306,14 @@ body .logo img {
   color: #be0f0f;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .contact h3 {
   color: #be0f0f;
 }
@@ -289,7 +330,7 @@ body .logo img {
 .contact hr.lineVertical-contact {
   background-color: #be0f0f;
   width: 5px;
-  height: 250px;
+  height: 190px;
   position: absolute;
   right: 0;
   margin: 0px 0;
@@ -316,12 +357,11 @@ body .logo img {
 
 @media (max-width: 767px) {
   .rowContainer {
-    overflow: auto;
-    height: 100vh !important;
+    height: 70vh;
   }
   .rowContainer .colContainer {
     overflow: auto;
-    height: 110vh !important;
+    overflow-x: hidden;
   }
   .nav {
     position: fixed;
@@ -329,10 +369,13 @@ body .logo img {
     bottom: 0;
     z-index: 1000000000000000;
   }
+  .about {
+    display: block;
+  }
   .about hr#aboutLineVerticalImg {
     background-color: #be0f0f;
     width: 5px;
-    height: 70vh;
+    height: 330px;
     position: absolute;
     right: 0px;
     margin: 0 0px;
@@ -347,7 +390,12 @@ body .logo img {
   }
   .about .empty {
     width: 100%;
-    height: 50px;
+  }
+  .skills {
+    display: block;
+  }
+  .work {
+    display: block;
   }
   .work_images {
     color: #be0f0f;
@@ -355,10 +403,13 @@ body .logo img {
   .work_images .caption {
     width: 90% !important;
   }
+  .contact {
+    display: block;
+  }
   .contact hr.lineVertical-contact {
     background-color: #be0f0f;
     width: 5px;
-    height: 200px;
+    height: 165px;
     position: absolute;
     right: 0;
     margin: 0px 0;
@@ -367,7 +418,7 @@ body .logo img {
 
 @media (max-width: 580px) {
   .home {
-    background-position-x: -180px;
+    background-position-x: -150px;
   }
   .work .carouselContent h3 {
     font-size: 15px;
@@ -388,13 +439,10 @@ body .logo img {
     width: 350px !important;
   }
   .rowContainer {
-    height: 75vh;
-  }
-  .rowContainer .colContainer {
     height: 80vh;
   }
   .home {
-    background-position-x: -0px;
+    background-position-x: -50px;
   }
   .about hr#aboutLineVerticalImg {
     background-color: #be0f0f;
@@ -413,7 +461,7 @@ body .logo img {
   .contact hr.lineVertical-contact {
     background-color: #be0f0f;
     width: 5px;
-    height: 230px;
+    height: 190px;
     position: absolute;
     right: 0;
     margin: 0px 0;
@@ -423,6 +471,9 @@ body .logo img {
 @media (max-width: 728px) {
   .logo img {
     width: 100% !important;
+  }
+  .work .containerWork {
+    display: block !important;
   }
 }
 
