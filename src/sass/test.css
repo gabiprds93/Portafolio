@@ -162,11 +162,11 @@ body .logo img {
 
 .skills i {
   font-size: 450%;
-  color: #be0f0f;
+  color: #333333;
 }
 
 .skills i:hover {
-  color: #333333;
+  color: #be0f0f;
   cursor: pointer;
 }
 

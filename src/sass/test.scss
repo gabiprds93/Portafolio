@@ -252,10 +252,10 @@ body
   i
   {
     font-size: 450%;
-    color: $colorRed;
+    color: $colorDarkGray;
     &:hover
     {
-      color: $colorDarkGray;
+      color: $colorRed;
       cursor: pointer;      
     }
   }

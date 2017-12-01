@@ -2,6 +2,7 @@
   "name": "portafolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://gabiprds93.github.io/Mi-Portafolio",
   "dependencies": {
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.5",

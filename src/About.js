@@ -37,8 +37,10 @@ const About = () =>
                 y Bachiller en Ingeniería de Sistemas de la Universidad Católica de Santa María.
                 Me encanta el mundo de la tecnología, estar inmersa en él me ha enseñado a ser autodidacta y
                 a estar en constante aprendizaje. Siempre esforzandome por alcanzar las metas y objetivos, para mí 
-                es importante trabajar por satisfacción personal y hacer lo que me gusta. <br/><br/>
+                es importante trabajar por satisfacción personal y hacer lo que me gusta.<br/><br/>
+                <p className="text-center">
                 "La mejor manera de predecir el futuro es crearlo." - Abraham Lincoln
+                </p>
                  {/* y a aprender a salir de mi zona de confort como cuando tienes  ya que me ayudó a crecer. */}
               </p>
             {/* </Col>   */}
@@ -54,7 +56,7 @@ const About = () =>
                 Reconocimientos obtenidos en Laboratoria:
               </p>
             </Col>
-            <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
+            <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={1}>
               <Image width="100%" height="auto" src={bestSquad} title="Mejor Squad" alt="Mejor Squad" />
             </Col>
             <Col xs={3} xsOffset={1} sm={2} smOffset={0} md={2} mdOffset={0}>
