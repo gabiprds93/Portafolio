@@ -358,7 +358,7 @@ body .logo img {
 
 @media (max-width: 767px) {
   .rowContainer {
-    height: 70vh;
+    height: 60vh;
   }
   .rowContainer .colContainer {
     overflow: auto;
