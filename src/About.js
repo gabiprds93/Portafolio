@@ -91,13 +91,13 @@ const About = () =>
             </Col>
           {/* </Row> */}
           {/* <Row> */}
-            <Col xs={3} xsOffset={1}>
+            {/* <Col xs={3} xsOffset={1}>
               <p>
                 <a href="https://www.facebook.com/gabriela.a.paredes.paredes" target="_blank">
                   <i className="fa fa-facebook fa-2x" aria-hidden="true"></i>
                 </a>
               </p>
-            </Col>
+            </Col> */}
           {/* </Row> */}
           {/* <Row> */}
             <Col xs={3} xsOffset={1}>
@@ -126,7 +126,7 @@ const About = () =>
               </p>
             </Col>
           </Row>
-          <Row>
+          {/* <Row>
             <Col xs={4} xsOffset={0} sm={3} smOffset={0} md={3} mdOffset={0}>
               <p>
                 <a href="https://www.facebook.com/gabriela.a.paredes.paredes" target="_blank">
@@ -134,7 +134,7 @@ const About = () =>
                 </a>
               </p>
             </Col>
-          </Row>
+          </Row> */}
           <Row>
             <Col xs={12} xsOffset={0} md={3} mdOffset={0}>
               <p>

@@ -83,7 +83,7 @@ const Skills = () =>
               </Col>
               <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
                 <i class="devicon-react-original">
-                  <div className="text">React</div>                
+                  <div className="text">ReactJS</div>                
                 </i>   
               </Col>
               {/* <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
@@ -112,9 +112,14 @@ const Skills = () =>
               </Col>
             </Row> */}
             <Row>
-              <Col xs={4} xsOffset={4} sm={4} smOffset={4} md={4} mdOffset={4} className="skills_icons">
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
                 <i class="devicon-sass-original">
                   <div className="text">SASS</div>                
+                </i>   
+              </Col>
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-angularjs-plain">
+                  <div className="text">AngularJS</div>                
                 </i>   
               </Col>
               {/* <Col xs={3} xsOffset={0} md={3} mdOffset={0}>
@@ -159,11 +164,18 @@ const Skills = () =>
                 </i>   
               </Col>
             </Row>
-            {/* <Row>
-              <Col xs={12} xsOffset={0} md={10} mdOffset={1}>
-                <h1 className=""></h1>
+            <Row>
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-trello-plain">
+                  <div className="text">Trello</div>                
+                </i>   
               </Col>
-            </Row> */}
+              <Col xs={4} xsOffset={0} sm={4} smOffset={0} md={4} mdOffset={0} className="skills_icons">
+                <i class="devicon-chrome-plain">
+                  <div className="text">Chrome</div>                
+                </i>   
+              </Col>
+            </Row>
             {/* <Row>
               <Col xs={12} xsOffset={0} md={12} mdOffset={0}>
                 <h4 className="">Habilidades Blandas</h4>
