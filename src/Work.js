@@ -12,6 +12,9 @@ import trivia from './assets/images/trivia-compressor.jpg';
 import trivia2 from './assets/images/trivia2-compressor.png';
 import panda from './assets/images/panda-compressor.jpg';
 import panda2 from './assets/images/panda2-compressor.png';
+import tls2 from './assets/images/tls2.png';
+import ppj2 from './assets/images/ppj2.png';
+import cpj2 from './assets/images/cpj2.png';
 
 const Work = () => 
 {
@@ -112,6 +115,36 @@ const Work = () =>
                 </a>
                 <a href="https://github.com/gabiprds93/Pandas" target="_blank" className="btn">
                   Repositorio
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="http://eurekaad.pe/test/tls/web" target="_blank">
+                <img title="tls2" alt="tls2" src={tls2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="http://eurekaad.pe/test/tls/web" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="https://www.clinicapj.org.pe/" target="_blank">
+                <img title="cpj2" alt="cpj2" src={cpj2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="https://www.clinicapj.org.pe/" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="https://www.policlinicoperuanojapones.org/" target="_blank">
+                <img title="ppj2" alt="ppj2" src={ppj2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="https://www.policlinicoperuanojapones.org/" target="_blank" className="btn">
+                  Sitio web
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
@@ -412,6 +445,36 @@ const Work = () =>
                 </a>
                 <a href="https://github.com/gabiprds93/Pandas" target="_blank" className="btn">
                   Repositorio
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="http://eurekaad.pe/test/tls/web" target="_blank">
+                <img title="tls2" alt="tls2" src={tls2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="http://eurekaad.pe/test/tls/web" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="https://www.clinicapj.org.pe/" target="_blank">
+                <img title="cpj2" alt="cpj2" src={cpj2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="https://www.clinicapj.org.pe/" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="https://www.policlinicoperuanojapones.org/" target="_blank">
+                <img title="ppj2" alt="ppj2" src={ppj2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="https://www.policlinicoperuanojapones.org/" target="_blank" className="btn">
+                  Sitio web
                 </a>
               </Carousel.Caption>
             </Carousel.Item>
