@@ -15,6 +15,7 @@ import panda2 from './assets/images/panda2-compressor.png';
 import tls2 from './assets/images/tls2.png';
 import ppj2 from './assets/images/ppj2.png';
 import cpj2 from './assets/images/cpj2.png';
+import ciup2 from './assets/images/ciup2.png';
 
 const Work = () => 
 {
@@ -32,14 +33,16 @@ const Work = () =>
       </Row>
       <Row className="containerWork">
         <Col xs={12} xsOffset={0} smHidden={true} mdHidden={true} lgHidden={true}>
+          <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0} className="text-center">
+            <h4>Recientes</h4>
+          </Col>
           <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
           <Carousel>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <a href="https://gabiprds93.github.io/Laberinto/" target="_blank">
                 <img title="Laberinto" alt="Laberinto" responsive src={laberinto1}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3 className="">Laberinto</h3> */}
                 <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -53,7 +56,6 @@ const Work = () =>
                 <img title="Ajedrez" alt="Ajedrez" src={ajedrez2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Tablero de Ajedrez</h3> */}
                 <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -67,7 +69,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={asientos2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Reserva de Asientos</h3> */}
                 <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -81,7 +82,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={koala2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Save the Koala</h3> */}
                 <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -95,7 +95,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={trivia2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Trivia Disney</h3> */}
                 <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -109,7 +108,6 @@ const Work = () =>
                 <img title="Pandas" alt="Pandas" src={panda2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Love Love Panda</h3> */}
                 <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -117,7 +115,7 @@ const Work = () =>
                   Repositorio
                 </a>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
             <Carousel.Item>
               <a href="http://eurekaad.pe/test/tls/web" target="_blank">
                 <img title="tls2" alt="tls2" src={tls2}/>
@@ -144,6 +142,16 @@ const Work = () =>
               </a>
               <Carousel.Caption className="carouselContent">
                 <a href="https://www.policlinicoperuanojapones.org/" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="http://www.up.edu.pe/idiomas/" target="_blank">
+                <img title="ciup2" alt="ciup2" src={ciup2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="http://www.up.edu.pe/idiomas/" target="_blank" className="btn">
                   Sitio web
                 </a>
               </Carousel.Caption>
@@ -362,14 +370,16 @@ const Work = () =>
           </Col>                      
         </Col>
         <Col xsHidden={true} sm={7} smOffset={0} md={6} mdOffset={0}>
+          <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0} className="text-center">
+            <h4>Recientes</h4>
+          </Col>
           <Col xs={12} xsOffset={0} sm={12} smOffset={0} md={12} mdOffset={0}>
           <Carousel>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <a href="https://gabiprds93.github.io/Laberinto/" target="_blank">
                 <img title="Laberinto" alt="Laberinto" responsive src={laberinto1}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3 className="">Laberinto</h3> */}
                 <a href="https://gabiprds93.github.io/Laberinto/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -383,7 +393,6 @@ const Work = () =>
                 <img title="Ajedrez" alt="Ajedrez" src={ajedrez2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Tablero de Ajedrez</h3> */}
                 <a href="https://gabiprds93.github.io/Tablero-Ajedrez/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -397,7 +406,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={asientos2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Reserva de Asientos</h3> */}
                 <a href="https://gabiprds93.github.io/Reserva-Asientos/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -411,7 +419,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={koala2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Save the Koala</h3> */}
                 <a href="https://gabiprds93.github.io/save-the-koala-vol2/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -425,7 +432,6 @@ const Work = () =>
                 <img title="Reserva Asientos" alt="Reserva Asientos" src={trivia2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Trivia Disney</h3> */}
                 <a href="https://gabiprds93.github.io/Trivia-Redux/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -439,7 +445,6 @@ const Work = () =>
                 <img title="Pandas" alt="Pandas" src={panda2}/>
               </a>
               <Carousel.Caption className="carouselContent">
-                {/* <h3>Love Love Panda</h3> */}
                 <a href="https://gabiprds93.github.io/Pandas/" target="_blank" className="btn">
                   Demo
                 </a>
@@ -447,7 +452,7 @@ const Work = () =>
                   Repositorio
                 </a>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
             <Carousel.Item>
               <a href="http://eurekaad.pe/test/tls/web" target="_blank">
                 <img title="tls2" alt="tls2" src={tls2}/>
@@ -474,6 +479,16 @@ const Work = () =>
               </a>
               <Carousel.Caption className="carouselContent">
                 <a href="https://www.policlinicoperuanojapones.org/" target="_blank" className="btn">
+                  Sitio web
+                </a>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <a href="http://www.up.edu.pe/idiomas/" target="_blank">
+                <img title="ciup2" alt="ciup2" src={ciup2}/>
+              </a>
+              <Carousel.Caption className="carouselContent">
+                <a href="http://www.up.edu.pe/idiomas/" target="_blank" className="btn">
                   Sitio web
                 </a>
               </Carousel.Caption>
